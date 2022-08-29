@@ -1,0 +1,26 @@
+version: "3"
+services:
+  solace:
+    container_name: PubSub
+    image: solace/solace-pubsub-standard:latest
+    shm_size: 2g
+    ports:
+      # SEMP / PubSub+ Manager
+      - "8080:8080"
+      # SMF / Solace APIs
+      - "55555:55555"
+      # Web Messaging
+      - "8008:8008"
+      # MQTT Connectivity 
+      - "1883:1883"
+      # MQTT Connectivity Websockets
+      - "8000:8000"
+      # AMQP (Advanced Message Queuing) Connectivity
+      - "5672:5672"
+      # REST Connectivity
+      - "9000:9000"
+      # SSH CLI
+      - "2222:2222"
+    environment:
+      - username_admin_globalaccesslevel=admin
+      - username_admin_password=admin
