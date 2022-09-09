@@ -12,3 +12,4 @@ https://github.com/SolaceLabs/solace-single-docker-compose <br>
 https://solace.com/products/event-broker/software/getting-started/ <br>
 https://github.com/SolaceSamples/solace-samples-python <br>
 https://www.youtube.com/watch?v=Q6pjD_H8Mbw&t=1462s <br>
+https://docs.solace.com/API/SDKPerf/SDKPerf.htm <br>
